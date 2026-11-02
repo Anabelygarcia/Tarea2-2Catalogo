@@ -1,0 +1,15 @@
+﻿Para cada uno de los 5 problemas de nuestro programa, creamos dos versiones:
+1. El Factorial: Usamos un ciclo `for` en la versión iterativa. En la recursiva, 
+el caso base es cuando `n <= 1` (retorna 1), y el caso recursivo multiplica `n` por la función con `n - 1`.
+
+2. Fibonacci: Sus casos base son 0 y 1. Su caso recursivo suma las dos llamadas anteriores: `n - 1` más `n - 2`.	
+
+3. Torres de Hanói: Su caso base es cuando ya no hay discos (`n == 0`). Su caso recursivo mueve los discos 
+entre los postes de origen, auxiliar y destino en tres pasos.
+
+4. Suma de Arreglos y Búsqueda Lineal: Usamos un índice `i` que avanza paso a paso. 
+El caso base detiene la función cuando el índice llega al final del arreglo (`i >= arr.Length`), evitando errores.
+
+
+Para estar 100% seguros de que todo funciona bien, el programa incluye un método de pruebas automáticas. Si ejecutamos el código en la consola,
+verás que compara la versión iterativa con la recursiva y al final nos arroja el mensaje: TODAS LAS PRUEBAS PASARON. (Muestra la consola ejecutándose rápidamente).
